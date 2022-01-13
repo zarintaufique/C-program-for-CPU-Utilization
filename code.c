@@ -27,3 +27,23 @@ int main() {
 			sentence[index++] = '\0';
 			fclose(fp);
 		}
+
+	
+		int ind = 0;
+		//to ignore the words like cpu and spaces
+		while(sentence[ind] < 48 || sentence[ind] > 57){
+			ind++;
+		}
+		int length = strlen(sentence);
+		char word[7][100];
+		int j = 0,k = 0;
+		for(j = 0;j < 7;j++){
+			for(k = 0;sentence[ind] != ' ';k++){
+				if(sentence[ind] > 47 && sentence[ind] < 58){
+					word[j][k] = sentence[ind]; 
+				}
+				ind++;
+			}
+				ind++;	
+		}
+	
