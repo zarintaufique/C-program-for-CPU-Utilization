@@ -47,3 +47,29 @@ int main() {
 				ind++;	
 		}
 	
+		//now converting all the variables
+		int vars[7];
+		int u = 0;
+		for(u = 0;u < 7;u++){
+			vars[u] = atoi(word[u]);
+			
+		}
+		//calculating total
+		double total = 0;
+		int t = 0;
+		for(t = 0;t < 7;t++){
+			total = total + vars[t];
+			
+		}
+		//calculating without idle time
+		double idl = 0.00;
+		idl = total - vars[3];
+		idl = idl - vars[4];
+		
+		
+		double prc = 0.0f;
+		prc = idl/total;
+		
+		
+		sleep(1);
+		//////////////////////////////////////////////////////////////////
