@@ -140,4 +140,6 @@ int main() {
 		printf("%f\n", avg);
 	}
 	
-	
+	return 0;
+}
+
