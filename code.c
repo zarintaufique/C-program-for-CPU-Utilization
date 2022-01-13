@@ -111,4 +111,33 @@ int main() {
 			}
 				ind2++;	
 		}
+	//now converting all the variables
+		int vars2[7];
+		int u2 = 0;
+		for(u2 = 0;u2 < 7;u2++){
+			vars2[u2] = atoi(word2[u2]);
+		}
+		//calculating total
+		double total2 = 0;
+		int t2 = 0;
+		for(t2 = 0;t2 < 7;t2++){
+			total2 = total2 + vars2[t2];
+		}
+		
+		//calculating without idle time
+		double idl2 = 0;
+		idl2 = total2 - vars2[3];
+		idl2 = idl2 - vars2[4];
+	
+		double prc2 = 0;
+		prc2 = idl2/total2;
+		//printf("%d\n", vars[u]);
+	
+		//calculating average
+		double avg = prc + prc2;
+		avg = avg/2;
+		
+		printf("%f\n", avg);
+	}
+	
 	
