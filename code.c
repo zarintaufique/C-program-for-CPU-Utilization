@@ -73,3 +73,22 @@ int main() {
 		
 		sleep(1);
 		//////////////////////////////////////////////////////////////////
+		
+			
+		FILE* fp1;
+		fp1 = fopen("/proc/stat", "r");
+		if (fp1 == NULL) {
+			printf("File can't be opened.\n");
+		}
+		else {
+		//read upto first line
+			while ((ch = fgetc(fp1)) != '\n') {
+				sentence[index] = ch;
+				ch = fgetc(fp1);
+				index++;
+				sentence[index] = ch;
+				index++;
+			}
+			sentence[index++] = '\0';
+			fclose(fp1);
+		}
