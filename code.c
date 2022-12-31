@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+// main starts here
 int main() {
 	char ch = '\0';
 	char sentence[300];
