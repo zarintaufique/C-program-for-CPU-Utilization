@@ -29,7 +29,6 @@ int main() {
 			sentence[index++] = '\0';
 			fclose(fp);
 		}
-
 	
 		int ind = 0;
 		//to ignore the words like cpu and spaces
@@ -46,7 +45,7 @@ int main() {
 				}
 				ind++;
 			}
-				ind++;	
+			ind++;	
 		}
 	
 		//now converting all the variables
