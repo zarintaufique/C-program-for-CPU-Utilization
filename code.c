@@ -18,7 +18,7 @@ int main() {
 			printf("File can't be opened.\n");
 		}
 		else {
-		//read upto first line
+		//read upto the first line
 			while ((ch = fgetc(fp)) != '\n') {
 				sentence[index] = ch;
 				ch = fgetc(fp);
